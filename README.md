@@ -4,5 +4,41 @@
 
 ---
 
-## 📁 Project Structure
+
+---
+
+## 🧪 Models Explored
+
+### 1. **ConvAttention**
+- Combines convolutional layers with spatial and channel-wise attention.
+- Enhances focus on tumor regions by prioritizing spatial proximity of features.
+- Accuracy achieved: **93.06%**
+
+### 2. **Standard U-Net**
+- Encoder-decoder structure with skip connections.
+- Strong baseline model for biomedical image segmentation.
+- Accuracy achieved: **91.53%**
+
+### 3. **Attention-Based U-Net (Proposed)**
+- U-Net integrated with self-attention blocks between encoder-decoder.
+- Captures long-range dependencies and better spatial context.
+- Accuracy achieved: **95.50%**
+
+---
+
+## 📊 Dataset
+
+- **Source**: Public MRI dataset containing four categories:
+  - Glioma
+  - Meningioma
+  - Pituitary
+  - No Tumor
+- **Preprocessing**:
+  - Resizing to `224x224`
+  - Normalization
+  - Data augmentation: rotation, flipping, zooming
+
+---
+
+
 
