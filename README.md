@@ -1,22 +1,6 @@
 🧠 Attention-Based U-Net for Enhanced Brain Tumor Classification
 This project explores the effectiveness of integrating attention mechanisms into the U-Net architecture for improved brain tumor classification using MRI data. It compares multiple deep learning models including ConvAttention, standard U-Net, and the proposed Attention-Based U-Net.
 
-mkdir Brain-Tumor-Classification
-cd Brain-Tumor-Classification
-
-mkdir dataset models results saved_models
-
-# Create subfolders for dataset
-mkdir -p dataset/glioma
-mkdir -p dataset/meningioma
-mkdir -p dataset/pituitary
-mkdir -p dataset/no_tumor
-
-# Create placeholder files (you can fill them later)
-touch Brain_Tumor_Detection.ipynb
-touch README.md
-touch requirements.txt
-
 
 🧪 Models Explored
 1. ConvAttention
