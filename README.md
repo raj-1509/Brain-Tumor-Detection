@@ -1,12 +1,28 @@
-# 🧠 Attention-Based U-Net for Enhanced Brain Tumor Classification
+## Brain Tumor Detection using-U-Net with Attention for Multi-Class Image Classification
 
-> This project explores the effectiveness of integrating attention mechanisms into the U-Net architecture for improved brain tumor classification using MRI data. It compares multiple deep learning models including ConvAttention, standard U-Net, and the proposed Attention-Based U-Net.
-
----
-
+This project implements a U-Net architecture enhanced with Attention Gates for multi-class image classification using TensorFlow/Keras. The trained model is deployed using FastAPI and served over the web via `ngrok` on Google Colab.
 
 ---
 
+## 🧠 Model Overview
+
+- **Architecture**: U-Net with Attention Blocks
+- **Input Shape**: 224 x 224 x 3
+- **Output**: Softmax over 4 classes
+- **Key Features**:
+  - Attention Blocks between encoder and decoder
+  - Batch Normalization and Dropout for regularization
+  - Fully Connected classifier at the bottleneck
+
+---
+
+## 🚀 Deployment via FastAPI on Google Colab
+
+### ✅ Requirements
+
+Run the following to install dependencies:
+```bash
+!pip install tensorflow fastapi uvicorn pyngrok nest_asyncio
 ## 🧪 Models Explored
 
 ### 1. **ConvAttention**
